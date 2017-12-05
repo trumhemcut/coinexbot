@@ -1,0 +1,111 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "speak": "<s>Flight KL0605 to San Fransisco has been delayed.</s><s>It will not leave until 10:10 AM.</s>",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "size": "small",
+                            "url": "https://files.coinmarketcap.com/static/img/coins/32x32/bitcoin.png"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Bitcoin (BTC)",
+                            "weight": "bolder",
+                            "size": "large",
+                            "horizontalAlignment": "right",
+                            "isSubtle": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "$11,864.20",
+                            "horizontalAlignment": "right",
+                            "spacing": "none",
+                            "size": "large",
+                            "color": "attention"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "separator": true,
+            "spacing": "medium",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Market Cap",
+                            "isSubtle": true,
+                            "weight": "bolder"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Volume (24h)",
+                            "spacing": "small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Circulating Supply",
+                            "spacing": "small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Max Supply",
+                            "spacing": "small"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "$198,522,396,800 USD",
+                            "horizontalAlignment": "right",
+                            "isSubtle": true,
+                            "weight": "bolder"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "$6,604,200,000 USD",
+                            "horizontalAlignment": "right",
+                            "spacing": "small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "16,721,900 BTC",
+                            "horizontalAlignment": "right",
+                            "spacing": "small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "21,000,000 BTC",
+                            "horizontalAlignment": "right",
+                            "spacing": "small"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
